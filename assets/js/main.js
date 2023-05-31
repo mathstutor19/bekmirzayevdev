@@ -91,7 +91,7 @@ const sr = ScrollReveal({
 sr.reveal(
   '.home__data, .home__social, .contact__container , footer__container'
 );
-sr.reveal('.home__image', { origin: 'left' });
+// sr.reveal('.home__image', { origin: 'left' });
 sr.reveal('.about__data ', { origin: 'left' });
 sr.reveal('.about__image ', { origin: 'right' });
 sr.reveal('.skills__data ', { origin: 'left' });

@@ -19,13 +19,21 @@
       -> Copy the color mode (HSL)
   */
 
-  --hue: 162;
+  --hue: 110;
+  --first-color: #29df29;
+  --first-color-alt: #11db11;
+  --title-color: hsla(0, 0%, 0%, 0.829);
+  --text-color: hsla(240, 100%, 1%, 0.925);
+  --body-color: white;
+  --container-color: #f4efed;
+
+  /* --hue: 162;
   --first-color: hsl(var(--hue), 100%, 40%);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(228, 8%, 65%);
   --body-color: hsl(228, 15%, 20%);
-  --container-color: hsl(228, 15%, 15%);
+  --container-color: hsl(228, 15%, 15%); */
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -164,6 +172,7 @@ svg {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
+  box-shadow: 0 2px 4px 0 #beb3b3;
 }
 .nav {
   height: var(--header-height);
