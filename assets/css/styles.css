@@ -446,6 +446,10 @@ svg {
   justify-content: center;
   padding-block: 1rem;
 }
+.projects__card__wrapper {
+  border-radius: 1rem;
+  background-color: var(--body-color);
+}
 .projects__card {
   position: relative;
   border-radius: 1rem;
@@ -457,7 +461,8 @@ svg {
 }
 .projects__img {
   width: 100%;
-  height: 100%;
+  height: 225px;
+  border-radius: 1rem;
 }
 .projects__modal {
   position: absolute;
@@ -465,11 +470,7 @@ svg {
   bottom: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 0) 0%,
-    hsla(var(--hue), 70%, 40%, 0.8) 120%
-  );
+  background-color: #11db11;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 1rem;
@@ -495,10 +496,19 @@ svg {
 .projects__subtitle {
   display: block;
   margin-bottom: 0.25rem;
+
+  font-size: var(--h3-font-size);
 }
 .projects__title {
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
   margin-bottom: 0.75rem;
+}
+.projects__technology {
+  color: black;
+  font-size: var(--h3-font-size);
+}
+.projects__about {
+  margin: 0.5rem;
 }
 .projects__button {
   display: flex;
@@ -634,7 +644,7 @@ svg {
   position: fixed;
   right: 1rem;
   bottom: -50%;
-  background-color: var(--body-color);
+  background-color: var(--first-color);
   padding: 6px;
   display: inline-flex;
   border-radius: 0.25rem;
@@ -642,7 +652,7 @@ svg {
   -moz-border-radius: 0.25rem;
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
-  color: var(--first-color);
+  color: white;
   font-size: 1.25rem;
   box-shadow: 0 4px 12px hsls(228, 15%, 8%, 0.4);
   z-index: var(--z-tooltip);
