@@ -486,6 +486,7 @@ svg {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
+  padding: 1rem;
   -o-transition: all 0.4s;
 }
 .projects__subtitle,
@@ -509,6 +510,8 @@ svg {
 }
 .projects__about {
   margin: 0.5rem;
+  font-size: var(--h3-font-size);
+  text-align: center;
 }
 .projects__button {
   display: flex;
