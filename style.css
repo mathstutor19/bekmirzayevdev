@@ -1,0 +1,10 @@
+body {
+  background: radial-gradient(circle at right, #1f1f1f, #0b0b0b);
+  color: white;
+}
+
+.contianer {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

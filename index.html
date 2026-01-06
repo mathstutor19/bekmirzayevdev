@@ -3,508 +3,281 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
-
-    <!--=============== REMIXICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>BekmirzayevDev</title>
   </head>
   <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Bekmirzayev<span>Dev</span> </a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">Services</a>
-            </li>
-            <li class="nav__item">
-              <a href="#projects" class="nav__link">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-          <!-- Close button  -->
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
-          </div>
-        </div>
-        <!-- Toggle button  -->
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-line"></i>
-        </div>
+    <!-- NAVBAR -->
+    <header class="contianer">
+      <nav
+        class="flex items-center justify-between hidden md:flex pt-[57px] pb-[30px]"
+      >
+        <a href="#">
+          <img src="./images/LOGO.svg" alt="logo" />
+        </a>
+        <ul class="flex items-center justify-between gap-15 text-[#959595]">
+          <li>
+            <a class="hover:text-orange-500" href="#">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-500" href="#">Services</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-500" href="#">About me</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-500" href="#">Portfolio</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-500" href="#">Contact me</a>
+          </li>
+        </ul>
+        <button
+          class="bg-linear-95 from-[#fd6f00] to-[#e46400] text-while rounded-lg font-semibold py-3 px-10"
+        >
+          Hire Me
+        </button>
       </nav>
     </header>
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__content">
-            <div class="home__data">
-              <h3 class="home__subtitle">Hello, <span>I`m</span></h3>
-              <h1 class="home__title">Bekmirzayev Elmurod</h1>
-              <h3 class="home__education">Front-end Developer</h3>
-              <p class="home__description">
-                With knowledge in Front-end Developer and Back-end Developer, I
-                offer the best projects resulting in quality work
-              </p>
-              <a href="/assets/cv.pdf" class="button">Download cv</a>
-            </div>
-            <div class="home__social">
-              <a
-                href="https://github.com/mathstutor19"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-github-fill"></i>
-              </a>
-              <a
-                href="https://t.me/bekmirzayevdev"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-telegram-fill"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/bekmirzayev/"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-linkedin-box-line"></i>
-              </a>
-            </div>
+    <!-- HERO -->
+    <section class="contianer flex items-center justify-between">
+      <!-- LEFT -->
+      <div>
+        <p class="font-semibold text-2xl text-[#707070]">Hi I am</p>
+        <h2 class="text-3xl font-semibold text-[#959595] mt-2.5">
+          Mahmood Fazile
+        </h2>
+
+        <h1 class="text-[70px] mt-6 mb-4 font-bold text-orange-500 mt-4">
+          UI/UX designer
+        </h1>
+
+        <!-- SOCIAL -->
+        <div class="flex gap-4 mt-6 text-gray-400">
+          <img src="./images/instagram.svg" alt="instagram" />
+          <img src="./images/linkedin.svg" alt="instagram" />
+          <img src="./images/instagram.svg" alt="instagram" />
+          <img src="./images/instagram.svg" alt="instagram" />
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="flex gap-4 mt-8">
+          <button
+            class="bg-orange-500 text-white px-10 py-3 rounded-lg font-semibold hover:bg-orange-400"
+          >
+            Hire Me
+          </button>
+
+          <a
+            href="#"
+            class="border border-gray-500 px-6 py-3 rounded-lg hover:border-orange-500"
+          >
+            Download CV
+          </a>
+        </div>
+
+        <!-- STATS -->
+        <div
+          class="flex gap-12 mt-12 bg-[rgba(255,255,255,0.05)] p-6 rounded-xl w-fit"
+        >
+          <div class="pt-1 pr-8 pb-1 border-r">
+            <h3 class="text-orange-500 text-2xl font-bold">5+</h3>
+            <p class="text-[#dfdfdf] font-bold text-xl text-justify">
+              Experiences
+            </p>
           </div>
-          <div class="home__image">
-            <svg
-              class="home__blob"
-              viewBox="0 0 550 591"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <mask id="maskBlob" mask-type="alpha">
-                <path
-                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157
-                  170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157
-                  447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426
-                  587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843
-                  438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"
-                />
-              </mask>
-              <g mask="url(#maskBlob)">
-                <path
-                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157
-                  170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157
-                  447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426
-                  587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843
-                  438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"
-                />
-
-                <rect x="37" width="476" height="630" fill="url(#pattern0)" />
-              </g>
-
-              <rect x="37" width="476" height="300" fill="url(#pattern1)" />
-
-              <defs>
-                <pattern
-                  id="pattern0"
-                  patternContentUnits="objectBoundingBox"
-                  width="1"
-                  height="1"
-                >
-                  <use
-                    href="#imageBlob"
-                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"
-                  />
-                </pattern>
-
-                <pattern
-                  id="pattern1"
-                  patternContentUnits="objectBoundingBox"
-                  width="1"
-                  height="1"
-                >
-                  <use
-                    href="#imageBlob"
-                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"
-                  />
-                </pattern>
-
-                <!-- Insert your profile (recommended size: 640 x 940) -->
-                <image
-                  class="home__image"
-                  id="imageBlob"
-                  width="640"
-                  height="925"
-                  href="./assets/img/perfil.png"
-                />
-              </defs>
-            </svg>
+          <div class="pt-1 pr-8 pb-1 border-r">
+            <h3 class="text-orange-500 text-2xl font-bold">20+</h3>
+            <p class="text-[#dfdfdf] font-bold text-xl text-justify">
+              Project done
+            </p>
+          </div>
+          <div class="pt-1 pr-8 pb-1">
+            <h3 class="text-orange-500 text-2xl font-bold">80+</h3>
+            <p class="text-[#dfdfdf] font-bold text-xl text-justify">
+              Happy Clients
+            </p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about"></section>
-      <div class="about__container container grid">
-        <div class="about__data">
-          <h3 class="section__subtitle">My <span>Intro</span></h3>
-          <h2 class="section__title">About Me</h2>
-          <p class="about__description">
-            Front-End developer, I create web pages with UI/UX user interface, I
-            have years of exprience and many clients are happy with the project
-            carried out.
+      <!-- RIGHT IMAGE -->
+      <div class="relative flex justify-center">
+        <div
+          class="absolute w-[420px] h-[420px] bg-[#1c1c1c] rounded-full"
+        ></div>
+
+        <img
+          src="./images/Man.png"
+          alt="Profile"
+          class="relative z-10 w-[360px] object-cover"
+        />
+      </div>
+    </section>
+    <!-- ================= SERVICES ================= -->
+    <section class="contianer text-center">
+      <h2 class="text-[40px] font-bold mt-[150px] mb-[18px]">Services</h2>
+      <p class="text-[#707070]">
+        Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
+        felis ligula aliquam
+      </p>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6 px-6">
+        <!-- CARD -->
+        <div class="bg-[#141414] p-6 rounded-xl">
+          <img
+            class="mx-auto"
+            src="images/service-logo.svg"
+            alt="service-logo"
+          />
+          <h3 class="font-bold text-2xl text-[#fd6400] mt-4 mb-8 text-center">
+            App Design
+          </h3>
+          <p class="text-[#575757] font-medium text-xl text-center">
+            Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet
+            consectetur
           </p>
-          <a href="#contact" class="button">Contact Me</a>
         </div>
-        <div class="about__image">
-          <svg
-            class="about__blob"
-            viewBox="0 0 550 592"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <mask id="maskBorder" mask-type="alpha">
-              <path
-                d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157
-               171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157
-               448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609
-               270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843
-               439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z"
-                fill="black"
-              />
-            </mask>
-            <g mask="url(#maskBorder)">
-              <rect x="37" width="476" height="630" fill="url(#pattern2)" />
 
-              <path
-                d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157
-               192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285
-               580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641
-               40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843
-               175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z"
-                stroke="black"
-                stroke-width="10"
-              />
-            </g>
-
-            <rect x="37" width="476" height="300" fill="url(#pattern3)" />
-
-            <defs>
-              <pattern
-                id="pattern2"
-                patternContentUnits="objectBoundingBox"
-                width="1"
-                height="1"
-              >
-                <use
-                  href="#imageBorder"
-                  transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"
-                />
-              </pattern>
-
-              <pattern
-                id="pattern3"
-                patternContentUnits="objectBoundingBox"
-                width="1"
-                height="1"
-              >
-                <use
-                  href="#imageBorder"
-                  transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"
-                />
-              </pattern>
-
-              <!-- Insert your profile (recommended size: 640 x 940) -->
-              <image
-                class="about__img"
-                id="imageBorder"
-                width="640"
-                height="940"
-                href="assets/img/perfil.png"
-              />
-            </defs>
-          </svg>
+        <!-- CARD -->
+        <div class="bg-[#141414] p-6 rounded-xl">
+          <img
+            class="mx-auto"
+            src="images/service-logo.svg"
+            alt="service-logo"
+          />
+          <h3 class="font-bold text-2xl text-[#fd6400] mt-4 mb-8 text-center">
+            App Design
+          </h3>
+          <p class="text-[#575757] font-medium text-xl text-center">
+            Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet
+            consectetur
+          </p>
+        </div>
+        <!-- CARD -->
+        <div class="bg-[#141414] p-6 rounded-xl">
+          <img
+            class="mx-auto"
+            src="images/service-logo.svg"
+            alt="service-logo"
+          />
+          <h3 class="font-bold text-2xl text-[#fd6400] mt-4 mb-8 text-center">
+            App Design
+          </h3>
+          <p class="text-[#575757] font-medium text-xl text-center">
+            Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet
+            consectetur
+          </p>
         </div>
       </div>
-      <!--==================== SKILLS ====================-->
-      <section class="skills section">
-        <div class="skills__container container grid">
-          <div class="skills__data">
-            <h3 class="section__subtitle">Favorite <span>Skills</span></h3>
-            <h2 class="section__title">My Skills</h2>
-            <p class="skills__description">
-              See fully what skills I have and perform, to develop the projects
-              for you.
-            </p>
-            <a href="#projects " class="button">See Projects</a>
+    </section>
+
+    <!-- ================= ABOUT ME ================= -->
+    <section class="py-24">
+      <div class="max-w-7xl mx-auto px-8">
+        <!-- Title -->
+        <div class="text-center mb-16">
+          <h2 class="text-[40px] font-bold mt-[150px] mb-[18px]">About Me</h2>
+          <p class="text-[#707070]">
+            User Interface and User Experience and Also video editing
+          </p>
+        </div>
+
+        <!-- Content -->
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+          <!-- LEFT IMAGE -->
+          <div class="relative flex justify-center">
+            <!-- Dark circle -->
+            <div
+              class="absolute w-[523px] h-[676px] bg-[#1c1c1c] rounded-tl-[261px] rounded-tr-[261px] rounded-br-[12px] rounded-bl-[12px]"
+            ></div>
+
+            <img
+              src="images/Man.png"
+              alt="About profile"
+              class="relative z-10 w-[360px] grayscale"
+            />
           </div>
-          <div class="skills__content">
-            <ol class="skills__group">
-              <li class="skills__item">HTML & CSS</li>
-              <li class="skills__item">Bootstrap & Sass</li>
-              <li class="skills__item">JavaScript</li>
-              <li class="skills__item">React & React-router</li>
-              <li class="skills__item">Redux & Redux-toolkit</li>
-            </ol>
-            <ol class="skills__group" start="6">
-              <li class="skills__item">Tailwind CSS</li>
-              <li class="skills__item">Node & Express</li>
-              <li class="skills__item">MongoDB</li>
-              <li class="skills__item">Git & Github</li>
-              <li class="skills__item">JavaScript OOP</li>
-            </ol>
-          </div>
-        </div>
-      </section>
-      <!--==================== SERVICES ====================-->
-      <section class="services section" id="services">
-        <h3 class="section__subtitle">My <span>Services</span></h3>
-        <h2 class="section__title">What I Do</h2>
-        <div class="services__container container grid">
-          <article class="services__card">
-            <i class="ri-layout-3-line services__icon"></i>
-            <h2 class="services__title">Front-end Developer</h2>
-            <p class="services__description">
-              Development of custom web pages.Using current technologies and
-              libraries of the labor field
+
+          <!-- RIGHT TEXT -->
+          <div class="max-w-xl">
+            <p
+              class="font-medium text-xl tracking-normal text-justify text-[#959595]"
+            >
+              A software engineer, the modern-day architect of digital realms,
+              navigates the ethereal landscapes of code, sculpting intangible
+              structures that shape our technological world. With fingers poised
+              over keyboards like virtuoso pianists, they compose symphonies of
+              logic, their minds a labyrinth of algorithms and solutions.
+              <br /><br />
+              Their canvas is a screen, a vast expanse where lines of code dance
+              in intricate patterns, weaving the fabric of programs and
+              applications. Each keystroke is a brushstroke, crafting intricate
+              architectures and breathing life into innovative designs.
+              <br /><br />
+              In this digital atelier, they don the mantle of problem solvers,
+              confronting bugs and glitches like valiant knights in an
+              ever-evolving quest for perfection. Debugging becomes a noble
+              pursuit, unraveling the mysteries hidden within the tangled webs
+              of code.
             </p>
-          </article>
-          <article class="services__card">
-            <i class="ri-smartphone-line services__icon"></i>
-            <h2 class="services__title">Back-end Developer</h2>
-            <p class="services__description">
-              I am also known build and maintain the mechanisms that process
-              data and perform actions on websites.
-            </p>
-          </article>
-          <article class="services__card">
-            <i class="ri-parentheses-line services__icon"></i>
-            <h2 class="services__title">Maths Tutor</h2>
-            <p class="services__description">
-              I have been working as maths tutor and physics tutor for 5 years.
-              I can solve maths`s problems easier
-            </p>
-          </article>
-        </div>
-      </section>
 
-      <!--==================== PROJECTS ====================-->
-      <section class="projects section" id="projects">
-        <h3 class="section__subtitle">My <span>Jobs</span></h3>
-        <h2 class="section__title">Recent Projects</h2>
-        <div class="projects__container container grid">
-          <article class="projects__card__wrapper">
-            <div class="projects__card">
-              <a href="https://mixmaster-tau.vercel.app/" target="_blank">
-                <img
-                  src="assets/img/mixmaster.jpg"
-                  alt="projects"
-                  class="projects__img"
-                />
-
-                <div class="projects__modal">
-                  <span class="projects__subtitle">MixMater in React</span>
-                  <h2 class="projects__title">Used Technology</h2>
-                  <p class="projects__technology">
-                    Html , Css , API, React, Redux, React Query
-                  </p>
-                </div>
-              </a>
-            </div>
-            <h2 class="projects__about">MixMater in React</h2>
-          </article>
-
-          <article class="projects__card__wrapper">
-            <div class="projects__card">
-              <a
-                href="https://moviesproject-javascript.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  src="assets/img/movieporjectjs.jpg"
-                  alt="projects"
-                  class="projects__img"
-                />
-
-                <div class="projects__modal">
-                  <span class="projects__subtitle">Movies in Javascript</span>
-                  <h2 class="projects__title">Used Technology</h2>
-                  <p class="projects__technology">
-                    Html , Css ,API, Javascript
-                  </p>
-                </div>
-              </a>
-            </div>
-            <h2 class="projects__about">Movies in Javascript</h2>
-          </article>
-
-          <article class="projects__card__wrapper">
-            <div class="projects__card">
-              <a href="https://snakegame-gamma.vercel.app/" target="_blank">
-                <img
-                  src="assets/img/snakegame.jpg"
-                  alt="projects"
-                  class="projects__img"
-                />
-
-                <div class="projects__modal">
-                  <span class="projects__subtitle">SnakeGame in JS OOP</span>
-                  <h2 class="projects__title">Used Technology</h2>
-                  <p class="projects__technology">
-                    Html , Css ,Canvas, JavaScript, OOP
-                  </p>
-                </div>
-              </a>
-            </div>
-            <h2 class="projects__about">SnakeGame in JS OOP</h2>
-          </article>
-
-          <article class="projects__card__wrapper">
-            <div class="projects__card">
-              <a href="https://typingtest-eta.vercel.app/" target="_blank">
-                <img
-                  src="assets/img/typingtest.jpg"
-                  alt="projects"
-                  class="projects__img"
-                />
-
-                <div class="projects__modal">
-                  <span class="projects__subtitle">Typing in JavaScript</span>
-                  <h2 class="projects__title">Used Technology</h2>
-                  <p class="projects__technology">Html , Css , JavaScript</p>
-                </div>
-              </a>
-            </div>
-            <h2 class="projects__about">Typing in JavaScript</h2>
-          </article>
-
-          <article class="projects__card__wrapper">
-            <div class="projects__card">
-              <a href="https://comfyhouse.vercel.app" target="_blank">
-                <img
-                  src="assets/img/project-img-1.jpg"
-                  alt="projects"
-                  class="projects__img"
-                />
-
-                <div class="projects__modal">
-                  <span class="projects__subtitle"
-                    >ComfyHouse in JavaScript</span
-                  >
-                  <h2 class="projects__title">Used Technology</h2>
-                  <p class="projects__technology">
-                    Html , Css , JavaScript, API
-                  </p>
-                </div>
-              </a>
-            </div>
-            <h2 class="projects__about">ComfyHouse in JavaScript</h2>
-          </article>
-        </div>
-      </section>
-      <!--==================== CONTACT ====================-->
-      <section class="contact section" id="contact">
-        <h3 class="section__subtitle">Get In <span>Touch</span></h3>
-        <h2 class="section__title">Contact Me</h2>
-        <div class="contact__container container grid">
-          <form action="" class="contact__form" id="contact-form">
-            <div class="contact__group">
-              <input
-                type="text"
-                name="user_name"
-                required
-                placeholder="Enter your name"
-                class="contact__input"
-              />
-              <input
-                type="email"
-                name="user_email"
-                required
-                placeholder="Enter your email"
-                class="contact__input"
-              />
-            </div>
-            <textarea
-              name="user_project"
-              required
-              class="contact__input"
-              placeholder="Enter your message"
-            ></textarea>
-            <p class="contact__message" id="contact-message"></p>
-            <button type="submit" class="button contact__button">
-              Send Message
+            <!-- Button -->
+            <button
+              class="mt-8 bg-orange-500 hover:bg-orange-400 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2"
+            >
+              <img src="./images/Download.svg" alt="Download" /> Download CV
             </button>
-          </form>
+          </div>
         </div>
-      </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-      <div class="footer__container container grid">
-        <div>
-          <h1 class="footer__title">Bekmirzayev<span>Dev</span></h1>
-          <h2 class="footer__education">Front-End Developer</h2>
-        </div>
-        <div class="footer__social">
-          <a
-            href="https://github.com/mathstutor19"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="ri-github-fill"></i>
-          </a>
-          <a
-            href="https://t.me/bekmirzayevdev"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="ri-telegram-fill"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/bekmirzayev/"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="ri-linkedin-box-line"></i>
-          </a>
-        </div>
-        <span class="footer__copy">&#169; Copyright . All rights reserved</span>
       </div>
-    </footer>
+    </section>
 
-    <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="ri-arrow-up-line"></i>
-    </a>
-    <!--=============== SCROLLREVEAL ===============-->
-    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!--=============== EMAIL JS ===============-->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <!-- ================= PORTFOLIO ================= -->
+    <section class="py-20 text-center">
+      <h2 class="text-3xl font-bold mb-8">Portfolio</h2>
+
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-6">
+        <div class="bg-[#141414] rounded-xl p-4">
+          <img src="https://picsum.photos/300/200" class="rounded-lg mb-2" />
+          <p class="text-sm text-gray-400">Name Project</p>
+        </div>
+        <div class="bg-[#141414] rounded-xl p-4">
+          <img src="https://picsum.photos/300/200" class="rounded-lg mb-2" />
+          <p class="text-sm text-gray-400">Name Project</p>
+        </div>
+        <div class="bg-[#141414] rounded-xl p-4">
+          <img src="https://picsum.photos/300/200" class="rounded-lg mb-2" />
+          <p class="text-sm text-gray-400">Name Project</p>
+        </div>
+      </div>
+    </section>
+    <!-- ================= CONTACT ================= -->
+    <section class="py-20 max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Contact me</h2>
+
+      <form class="grid md:grid-cols-2 gap-4">
+        <input class="bg-[#141414] p-3 rounded" placeholder="Name" />
+        <input class="bg-[#141414] p-3 rounded" placeholder="Email" />
+        <input class="bg-[#141414] p-3 rounded" placeholder="Phone" />
+        <input class="bg-[#141414] p-3 rounded" placeholder="Service" />
+        <textarea
+          class="bg-[#141414] p-3 rounded md:col-span-2"
+          placeholder="Project details"
+        ></textarea>
+        <button
+          class="border border-gray-500 px-6 py-3 rounded md:col-span-2 w-fit mx-auto"
+        >
+          Send
+        </button>
+      </form>
+    </section>
+    <!-- ================= FOOTER ================= -->
+    <footer class="py-10 text-center text-gray-400 border-t border-gray-800">
+      <div class="text-orange-500 font-bold mb-4">LOGO</div>
+      <p>© 2026 UI/UX Designer</p>
+    </footer>
   </body>
 </html>
