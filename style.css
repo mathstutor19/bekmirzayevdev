@@ -1,6 +1,9 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
   background: radial-gradient(circle at right, #1f1f1f, #0b0b0b);
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,82 +7,168 @@
     <link rel="stylesheet" href="style.css" />
     <title>BekmirzayevDev</title>
   </head>
-  <body>
+  <body style="font-family: 'Roboto', sans-serif">
     <!-- NAVBAR -->
-    <header class="container">
-      <nav
-        class="flex items-center justify-between hidden md:flex pt-[57px] pb-[30px]"
+    <nav
+      class="fixed w-full top-0 left-0 z-50 py-3 bg-black/50 backdrop-blur-2xl shadow-md shadow-orange-500"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-16"
       >
+        <!-- Logo -->
         <a href="#">
-          <img src="./images/LOGO.svg" alt="logo" />
+          <p
+            class="bg-gradient-to-r from-[#fa6e00] to-[#e60026] bg-clip-text text-transparent text-[25px]"
+          >
+            BekmirzayevDev
+          </p>
         </a>
+
+        <!-- Desktop Menu -->
         <ul
-          class="flex items-center justify-between gap-15 text-[#959595] font-[Lato] font-medium text-[20px] leading-[100%] tracking-[3%] text-justify"
+          class="hidden md:flex items-center gap-10 text-[#959595] font-medium text-[16px] tracking-wider"
         >
           <li>
             <a class="hover:text-orange-500 text-orange-500" href="#">Home</a>
           </li>
           <li>
-            <a class="hover:text-orange-500" href="#">Services</a>
+            <a class="hover:text-orange-500" href="#services">Services</a>
           </li>
-          <li>
-            <a class="hover:text-orange-500" href="#">About me</a>
-          </li>
-          <li>
-            <a class="hover:text-orange-500" href="#">Portfolio</a>
-          </li>
-          <li>
-            <a class="hover:text-orange-500" href="#">Contact me</a>
-          </li>
+          <li><a class="hover:text-orange-500" href="#">About me</a></li>
+          <li><a class="hover:text-orange-500" href="#">Portfolio</a></li>
+          <li><a class="hover:text-orange-500" href="#">Contact me</a></li>
         </ul>
+
+        <!-- Hire Me Button (Desktop) -->
         <button
-          class="bg-linear-95 from-[#fd6f00] to-[#e46400] text-while rounded-lg font-semibold py-3 px-10"
+          class="hidden md:block bg-gradient-to-r from-[#fd6f00] to-[#e46400] text-white rounded-lg font-semibold py-3 px-6 text-[16px]"
         >
           Hire Me
         </button>
-      </nav>
-    </header>
 
-    <!-- HERO -->
-    <section class="container flex items-center justify-between">
-      <!-- LEFT -->
-      <div>
-        <p
-          class="font-semibold text-2xl text-[#707070] font-[Lato] text-[24px] leading-[100%] tracking-[3%]"
-        >
-          Hi I am
-        </p>
-        <h2
-          class="text-3xl font-semibold text-[#959595] mt-2.5 font-[Lato] font-bold text-[28px] leading-[100%] tracking-[3%]"
-        >
-          Mahmood Fazile
+        <!-- Mobile menu button -->
+        <div class="md:hidden duration-300">
+          <button id="mobile-menu-button" class="text-white focus:outline-none">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-black/90 backdrop-blur-lg"
+      >
+        <ul class="flex flex-col items-center gap-6 py-6 text-white text-lg">
+          <li><a href="#" class="hover:text-orange-500">Home</a></li>
+          <li>
+            <a href="#services" class="hover:text-orange-500">Services</a>
+          </li>
+          <li><a href="#" class="hover:text-orange-500">About me</a></li>
+          <li><a href="#" class="hover:text-orange-500">Portfolio</a></li>
+          <li><a href="#" class="hover:text-orange-500">Contact me</a></li>
+          <li>
+            <button
+              class="bg-gradient-to-r from-[#fd6f00] to-[#e46400] text-white rounded-lg font-semibold py-2 px-6"
+            >
+              Hire Me
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section
+      class="container mx-auto px-4 md:px-8 py-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-16 mt-25"
+    >
+      <!-- LEFT CONTENT -->
+      <div class="text-center lg:text-left max-w-xl mt-25">
+        <p class="font-semibold text-lg sm:text-xl text-[#707070]">Hi, I am</p>
+
+        <h2 class="mt-2 text-2xl sm:text-3xl font-bold text-[#959595]">
+          Bekmirzayev Elmurod
         </h2>
 
         <h1
-          class="mt-6 mb-4 font-bold text-orange-500 mt-4 font-[Lato] font-black text-[70px] leading-[100%] tracking-[3%]"
+          class="mt-6 mb-6 text-orange-500 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
         >
-          UI/UX designer
+          Full-Stack Developer
         </h1>
 
         <!-- SOCIAL -->
-        <div class="flex gap-4 mt-6 text-gray-400">
-          <img src="./images/instagram.svg" alt="instagram" />
-          <img src="./images/linkedin.svg" alt="instagram" />
-          <img src="./images/instagram.svg" alt="instagram" />
-          <img src="./images/instagram.svg" alt="instagram" />
+        <div class="flex justify-center lg:justify-start gap-2 mt-6">
+          <a
+            href="#"
+            class="group flex items-center justify-center w-11 h-11 rounded-full bg-white/5 hover:bg-orange-400 transition"
+          >
+            <img
+              src="./images/instagram.png"
+              alt="Instagram"
+              class="w-5 h-5 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition"
+            />
+          </a>
+
+          <a
+            href="#"
+            class="group flex items-center justify-center w-11 h-11 rounded-full bg-white/5 hover:bg-orange-400 transition"
+          >
+            <img
+              src="./images/linkedin.png"
+              alt="LinkedIn"
+              class="w-5 h-5 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition"
+            />
+          </a>
+
+          <a
+            href="#"
+            class="group flex items-center justify-center w-11 h-11 rounded-full bg-white/5 hover:bg-orange-400 transition"
+          >
+            <img
+              src="./images/github.png"
+              alt="GitHub"
+              class="w-5 h-5 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition"
+            />
+          </a>
+
+          <a
+            href="#"
+            class="group flex items-center justify-center w-11 h-11 rounded-full bg-white/5 hover:bg-orange-400 transition"
+          >
+            <img
+              src="./images/telegram.svg"
+              alt="Telegram"
+              class="w-5 h-5 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition"
+            />
+          </a>
         </div>
 
         <!-- BUTTONS -->
-        <div class="flex gap-4 mt-8">
+        <div
+          class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-8"
+        >
           <button
-            class="bg-orange-500 text-white px-10 py-3 rounded-lg font-semibold hover:bg-orange-400 font-[Lato] font-bold text-[20px] leading-[100%] tracking-[3%] text-justify"
+            class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-400 transition"
           >
             Hire Me
           </button>
 
           <a
             href="#"
-            class="border border-gray-500 px-6 py-3 rounded-lg hover:border-orange-500 font-[Lato] font-bold text-[20px] leading-[100%] tracking-[3%] text-justify text-[#959595]"
+            download
+            class="border border-gray-500 px-8 py-3 rounded-lg hover:border-orange-500 transition text-[#959595] font-semibold text-center"
           >
             Download CV
           </a>
@@ -90,363 +176,301 @@
 
         <!-- STATS -->
         <div
-          class="flex gap-12 mt-12 bg-[rgba(255,255,255,0.05)] p-6 rounded-xl w-fit"
+          class="mt-12 inline-flex flex-wrap justify-center lg:justify-start gap-8 bg-white/5 p-6 rounded-xl"
         >
-          <div class="pt-1 pr-8 pb-1 border-r">
-            <h3
-              class="text-orange-500 font-bold font-[Lato] font-extrabold text-[24px] leading-[100%] tracking-[3%] text-justify"
-            >
-              5+
-            </h3>
-            <p
-              class="text-[#dfdfdf] font-bold text-justify font-[Lato] font-bold text-[20px] leading-[100%] tracking-[3%]"
-            >
-              Experiences
-            </p>
+          <div class="text-center border-r pr-6">
+            <h3 class="text-orange-500 text-2xl font-bold">5+</h3>
+            <p class="text-gray-300 text-sm mt-1">Experience</p>
           </div>
-          <div class="pt-1 pr-8 pb-1 border-r">
-            <h3
-              class="text-orange-500 font-bold font-[Lato] font-extrabold text-[24px] leading-[100%] tracking-[3%] text-justify"
-            >
-              20+
-            </h3>
-            <p
-              class="text-[#dfdfdf] font-bold text-justify font-[Lato] font-bold text-[20px] leading-[100%] tracking-[3%]"
-            >
-              Project done
-            </p>
+
+          <div class="text-center border-r pr-6">
+            <h3 class="text-orange-500 text-2xl font-bold">20+</h3>
+            <p class="text-gray-300 text-sm mt-1">Projects</p>
           </div>
-          <div class="pt-1 pr-8 pb-1">
-            <h3
-              class="text-orange-500 font-bold font-[Lato] font-extrabold text-[24px] leading-[100%] tracking-[3%] text-justify"
-            >
-              80+
-            </h3>
-            <p
-              class="text-[#dfdfdf] font-bold text-justify font-[Lato] font-bold text-[20px] leading-[100%] tracking-[3%]"
-            >
-              Happy Clients
-            </p>
+
+          <div class="text-center">
+            <h3 class="text-orange-500 text-2xl font-bold">80+</h3>
+            <p class="text-gray-300 text-sm mt-1">Happy Clients</p>
           </div>
         </div>
       </div>
 
       <!-- RIGHT IMAGE -->
-      <div class="relative flex justify-center">
-        <div
-          class="absolute bg-[#1c1c1c] rounded-full w-[618px] h-[618px] top-[163px] right-[0px]"
-        ></div>
-
+      <div
+        class="flex justify-center w-full max-w-md lg:max-w-lg inset-0 bg-[#1c1c1c] rounded-full scale-110 -z-10 mt-[130px]"
+      >
         <img
           src="./images/Man.png"
           alt="Profile"
-          class="relative left-[-45px] z-10 object-cover w-[520px] h-[781px] rounded-[244px]"
+          class="w-full h-auto object-cover rounded-[200px]"
         />
       </div>
     </section>
+
     <!-- ================= SERVICES ================= -->
-    <section class="container text-center">
+    <section
+      id="services"
+      class="container mx-auto px-4 sm:px-6 lg:px-8 text-center py-20"
+    >
+      <!-- Title -->
       <h2
-        class="text-[40px] font-bold mt-[150px] mb-[18px] font-[Lato] leading-[100%] tracking-[3%]"
+        class="text-3xl sm:text-4xl font-bold mb-4 leading-tight tracking-wide mt-25"
       >
         Services
       </h2>
+
       <p
-        class="text-[#707070] font-[Lato] font-medium text-[20px] leading-[160%] tracking-[3%]"
+        class="max-w-2xl mx-auto text-gray-400 text-base sm:text-lg leading-relaxed"
       >
-        Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
-        felis ligula aliquam
+        I provide modern and efficient digital solutions, focusing on clean
+        design, performance, and scalability.
       </p>
 
-      <div class="mt-12 grid md:grid-cols-3 gap-6 px-6">
+      <!-- Cards -->
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- CARD -->
-        <div class="bg-[#141414] p-6 rounded-xl">
+        <div
+          class="bg-[#141414] p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#fd6400]/40"
+        >
           <img
-            class="mx-auto"
-            src="images/service-logo.svg"
-            alt="service-logo"
+            class="mx-auto mb-6 w-14 h-14"
+            src="images/laptop.svg"
+            alt="Front-end Developer"
           />
-          <h3 class="font-bold text-2xl text-[#fd6400] mt-4 mb-8 text-center">
-            App Design
+
+          <h3 class="font-bold text-xl sm:text-2xl text-[#fd6400] mb-3">
+            Front-end Developer
           </h3>
-          <p class="text-[#575757] font-medium text-xl text-center">
-            Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet
-            consectetur
+
+          <p class="text-gray-500 text-sm sm:text-base leading-relaxed">
+            I build responsive and user-friendly web interfaces using modern
+            frameworks and libraries, ensuring high performance and
+            accessibility.
           </p>
         </div>
 
         <!-- CARD -->
-        <div class="bg-[#141414] p-6 rounded-xl">
+        <div
+          class="bg-[#141414] p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#fd6400]/40"
+        >
           <img
-            class="mx-auto"
-            src="images/service-logo.svg"
-            alt="service-logo"
+            class="mx-auto mb-6 w-14 h-14"
+            src="images/server.svg"
+            alt="Back-end Developer"
           />
-          <h3 class="font-bold text-2xl text-[#fd6400] mt-4 mb-8 text-center">
-            App Design
+
+          <h3 class="font-bold text-xl sm:text-2xl text-[#fd6400] mb-3">
+            Back-end Developer
           </h3>
-          <p class="text-[#575757] font-medium text-xl text-center">
-            Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet
-            consectetur
+
+          <p class="text-gray-500 text-sm sm:text-base leading-relaxed">
+            I develop and maintain secure, scalable server-side applications
+            that handle data processing, APIs, and business logic efficiently.
           </p>
         </div>
+
         <!-- CARD -->
-        <div class="bg-[#141414] p-6 rounded-xl">
+        <div
+          class="bg-[#141414] p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#fd6400]/40"
+        >
           <img
-            class="mx-auto"
-            src="images/service-logo.svg"
-            alt="service-logo"
+            class="mx-auto mb-6 w-14 h-14"
+            src="images/mobile.svg"
+            alt="Mobile Developer"
           />
-          <h3 class="font-bold text-2xl text-[#fd6400] mt-4 mb-8 text-center">
-            App Design
+
+          <h3 class="font-bold text-xl sm:text-2xl text-[#fd6400] mb-3">
+            Mobile Developer
           </h3>
-          <p class="text-[#575757] font-medium text-xl text-center">
-            Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet
-            consectetur
+
+          <p class="text-gray-500 text-sm sm:text-base leading-relaxed">
+            I create cross-platform mobile applications with a focus on
+            performance, usability, and seamless user experience.
           </p>
         </div>
       </div>
     </section>
 
     <!-- ================= ABOUT ME ================= -->
-    <section class="container">
-      <div class="max-w-7xl mx-auto px-8">
-        <!-- Title -->
-        <div class="text-center mb-16">
-          <h2
-            class="text-[40px] font-bold mt-[150px] mb-[18px] font-[Lato] leading-[100%] tracking-[3%]"
-          >
-            Services
-          </h2>
-          <p
-            class="text-[#707070] font-[Lato] font-medium text-[20px] leading-[160%] tracking-[3%]"
-          >
-            Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
-            felis ligula aliquam
-          </p>
-        </div>
-
-        <!-- Content -->
-        <div class="flex gap-20 items-center justify-space-between">
+    <!-- ================= ABOUT ME ================= -->
+    <section class="container mx-auto px-4 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="flex flex-col lg:flex-row gap-16 items-center justify-between my-20 lg:my-32"
+        >
           <!-- LEFT IMAGE -->
           <div
-            class="flex justify-center relative w-[523px] h-[676px] bg-[#1c1c1c] rounded-tl-[261px] rounded-tr-[261px] rounded-br-[12px] rounded-bl-[12px]"
+            class="relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[523px] h-[520px] sm:h-[600px] lg:h-[676px] bg-[#1c1c1c] rounded-tl-[200px] sm:rounded-tl-[240px] lg:rounded-tl-[261px] rounded-tr-[200px] sm:rounded-tr-[240px] lg:rounded-tr-[261px] rounded-br-[12px] rounded-bl-[12px] flex justify-center"
           >
-            <!-- Dark circle -->
-            <!-- <div
-              class="absolute w-[523px] h-[676px] bg-[#1c1c1c] rounded-tl-[261px] rounded-tr-[261px] rounded-br-[12px] rounded-bl-[12px]"
-            ></div> -->
-
             <img
               src="images/Man.png"
               alt="About profile"
-              class="z-10 w-[566px] h-[808px] bottom-[0px] absolute grayscale"
+              class="absolute bottom-0 w-[90%] sm:w-[95%] lg:w-[566px] grayscale object-contain"
             />
           </div>
 
           <!-- RIGHT TEXT -->
-          <div class="max-w-xl">
+          <div class="max-w-xl text-center lg:text-left">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4 tracking-wide">
+              About Me
+            </h2>
+
             <p
-              class="font-medium text-xl tracking-normal text-justify text-[#959595]"
+              class="text-base sm:text-lg text-[#959595] leading-relaxed text-justify"
             >
-              A software engineer, the modern-day architect of digital realms,
-              navigates the ethereal landscapes of code, sculpting intangible
-              structures that shape our technological world. With fingers poised
-              over keyboards like virtuoso pianists, they compose symphonies of
-              logic, their minds a labyrinth of algorithms and solutions.
+              I am a passionate Software Engineer focused on building modern,
+              efficient, and user-friendly digital solutions. I enjoy
+              transforming complex problems into clean and intuitive
+              applications.
               <br /><br />
-              Their canvas is a screen, a vast expanse where lines of code dance
-              in intricate patterns, weaving the fabric of programs and
-              applications. Each keystroke is a brushstroke, crafting intricate
-              architectures and breathing life into innovative designs.
+
+              With experience in both front-end and back-end development, I work
+              with modern technologies to create responsive interfaces and
+              reliable server-side systems while following best practices.
               <br /><br />
-              In this digital atelier, they don the mantle of problem solvers,
-              confronting bugs and glitches like valiant knights in an
-              ever-evolving quest for perfection. Debugging becomes a noble
-              pursuit, unraveling the mysteries hidden within the tangled webs
-              of code.
+
+              I constantly improve my skills by learning new tools, solving real
+              problems, and optimizing performance to deliver high-quality
+              digital products.
             </p>
 
             <!-- Button -->
-            <button
-              class="mt-8 bg-orange-500 hover:bg-orange-400 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2"
-            >
-              <img src="./images/Download.svg" alt="Download" /> Download CV
-            </button>
+            <div class="flex justify-center lg:justify-start">
+              <button
+                class="mt-8 bg-orange-500 hover:bg-orange-400 transition text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2"
+              >
+                <img src="./images/Download.svg" alt="Download" />
+                Download CV
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- ================= PORTFOLIO ================= -->
-    <section id="portfolio" class="px-12 py-20 text-center">
-      <h2 class="text-4xl font-bold mb-12">Portfolio</h2>
-      <div class="flex justify-center gap-4 mb-12">
-        <button class="bg-orange-500 px-6 py-2 rounded">All</button>
+    <section id="portfolio" class="container mx-auto px-4 md:px-8 py-20">
+      <!-- Title -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold">Portfolio</h2>
+        <p class="text-gray-500 mt-3">
+          Some of my recent projects using modern technologies
+        </p>
+      </div>
+
+      <!-- FILTER BUTTONS -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
         <button
-          class="bg-[rgba(255,_255,_255,_0.08)] px-6 py-2 rounded hover:bg-gray-700"
+          class="bg-orange-500 text-white px-5 py-2 rounded-lg font-medium"
+        >
+          All
+        </button>
+        <button
+          class="bg-white/10 hover:bg-white/20 transition px-5 py-2 rounded-lg"
         >
           JavaScript
         </button>
         <button
-          class="bg-[rgba(255,_255,_255,_0.08)] px-6 py-2 rounded hover:bg-gray-700"
+          class="bg-white/10 hover:bg-white/20 transition px-5 py-2 rounded-lg"
         >
           React.js
         </button>
         <button
-          class="bg-[rgba(255,_255,_255,_0.08)] px-6 py-2 rounded hover:bg-gray-700"
+          class="bg-white/10 hover:bg-white/20 transition px-5 py-2 rounded-lg"
         >
           Next.js
         </button>
         <button
-          class="bg-[rgba(255,_255,_255,_0.08)] px-6 py-2 rounded hover:bg-gray-700"
+          class="bg-white/10 hover:bg-white/20 transition px-5 py-2 rounded-lg"
         >
           Node.js
         </button>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div>
-          <img
-            src="https://picsum.photos/450/300"
-            class="rounded-lg hover:scale-105 transition"
-          />
-          <div class="flex justify-between mt-4 px-2">
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Name Project
-            </p>
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Categories
-            </p>
+
+      <!-- PROJECT GRID -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- CARD -->
+        <div class="group">
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://picsum.photos/450/300"
+              alt="Project"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+            />
+          </div>
+
+          <div class="flex justify-between items-center mt-4 px-1">
+            <h3 class="font-semibold text-lg text-gray-200">Project Name</h3>
+            <span class="text-sm text-gray-400"> React.js </span>
           </div>
         </div>
-        <div>
-          <img
-            src="https://picsum.photos/450/300"
-            class="rounded-lg hover:scale-105 transition"
-          />
-          <div class="flex justify-between mt-4 px-2">
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Name Project
-            </p>
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Categories
-            </p>
+
+        <!-- CARD -->
+        <div class="group">
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://picsum.photos/450/300"
+              alt="Project"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+            />
+          </div>
+
+          <div class="flex justify-between items-center mt-4 px-1">
+            <h3 class="font-semibold text-lg text-gray-200">Project Name</h3>
+            <span class="text-sm text-gray-400"> JavaScript </span>
           </div>
         </div>
-        <div>
-          <img
-            src="https://picsum.photos/450/300"
-            class="rounded-lg hover:scale-105 transition"
-          />
-          <div class="flex justify-between mt-4 px-2">
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Name Project
-            </p>
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Categories
-            </p>
+
+        <!-- CARD -->
+        <div class="group">
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://picsum.photos/450/300"
+              alt="Project"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+            />
           </div>
-        </div>
-        <div>
-          <img
-            src="https://picsum.photos/450/300"
-            class="rounded-lg hover:scale-105 transition"
-          />
-          <div class="flex justify-between mt-4 px-2">
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Name Project
-            </p>
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Categories
-            </p>
-          </div>
-        </div>
-        <div>
-          <img
-            src="https://picsum.photos/450/300"
-            class="rounded-lg hover:scale-105 transition"
-          />
-          <div class="flex justify-between mt-4 px-2">
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Name Project
-            </p>
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Categories
-            </p>
-          </div>
-        </div>
-        <div>
-          <img
-            src="https://picsum.photos/450/300"
-            class="rounded-lg hover:scale-105 transition"
-          />
-          <div class="flex justify-between mt-4 px-2">
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Name Project
-            </p>
-            <p
-              class="font-[Lato] font-bold text-[16px] leading-[160%] tracking-[3%] text-justify capitalize text-[rgba(198,_198,_198,_1)]"
-            >
-              Categories
-            </p>
+
+          <div class="flex justify-between items-center mt-4 px-1">
+            <h3 class="font-semibold text-lg text-gray-200">Project Name</h3>
+            <span class="text-sm text-gray-400"> Next.js </span>
           </div>
         </div>
       </div>
     </section>
+
     <!-- ================= CONTACT ================= -->
     <section class="py-20 max-w-4xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-10">Contact me</h2>
 
-      <form class="grid md:grid-cols-2 gap-4">
-        <input class="bg-[#141414] p-3 rounded" placeholder="Name" />
-        <input class="bg-[#141414] p-3 rounded" placeholder="Email" />
-        <input class="bg-[#141414] p-3 rounded" placeholder="Phone" />
-        <input class="bg-[#141414] p-3 rounded" placeholder="Service" />
+      <form class="">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input class="bg-[#141414] p-3 rounded" placeholder="Name" />
+          <input class="bg-[#141414] p-3 rounded" placeholder="Email" />
+          <input class="bg-[#141414] p-3 rounded" placeholder="Phone" />
+          <input class="bg-[#141414] p-3 rounded" placeholder="Service" />
+        </div>
         <textarea
-          class="bg-[#141414] p-3 rounded md:col-span-2"
+          class="bg-[#141414] p-3 w-full my-4 rounded"
           placeholder="Project details"
         ></textarea>
-        <button
-          class="border px-6 py-3 rounded md:col-span-2 w-fit mx-auto bg-orange-500"
-        >
-          Send
-        </button>
+        <button class="py-2 rounded w-full bg-orange-500">Send</button>
       </form>
     </section>
 
     <!-- ================= FOOTER ================= -->
     <footer class="bg-black py-12 text-center border-t border-gray-900">
-      <div class="text-orange-500 font-bold text-2xl mb-6 text-center">
-        <img class="mx-auto" src="./images/LOGO.svg" alt="logo" />
-      </div>
-      <div class="flex justify-center gap-6 mb-8 text-gray-400">
-        <a href="#">Home</a><a href="#">Services</a><a href="#">About</a>
-      </div>
       <p class="text-gray-600 text-sm">
         © 2024 UI/UX Designer. All Rights Reserved.
       </p>
     </footer>
+    <script>
+      // Mobile menu toggle
+      const menuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
