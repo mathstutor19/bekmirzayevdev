@@ -442,14 +442,31 @@
     <section class="py-20 max-w-4xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-10">Contact me</h2>
 
-      <form class="">
+      <form class="" id="form">
         <div class="grid md:grid-cols-2 gap-4">
-          <input class="bg-[#141414] p-3 rounded" placeholder="Name" />
-          <input class="bg-[#141414] p-3 rounded" placeholder="Email" />
-          <input class="bg-[#141414] p-3 rounded" placeholder="Phone" />
-          <input class="bg-[#141414] p-3 rounded" placeholder="Service" />
+          <input
+            name="name"
+            class="bg-[#141414] p-3 rounded"
+            placeholder="Name"
+          />
+          <input
+            name="email"
+            class="bg-[#141414] p-3 rounded"
+            placeholder="Email"
+          />
+          <input
+            name="phone"
+            class="bg-[#141414] p-3 rounded"
+            placeholder="Phone"
+          />
+          <input
+            name="service"
+            class="bg-[#141414] p-3 rounded"
+            placeholder="Service"
+          />
         </div>
         <textarea
+          name="message"
           class="bg-[#141414] p-3 w-full my-4 rounded"
           placeholder="Project details"
         ></textarea>
@@ -472,5 +489,6 @@
         mobileMenu.classList.toggle("hidden");
       });
     </script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
