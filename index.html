@@ -292,7 +292,6 @@
     </section>
 
     <!-- ================= ABOUT ME ================= -->
-    <!-- ================= ABOUT ME ================= -->
     <section class="container mx-auto px-4 md:px-8">
       <div class="max-w-7xl mx-auto">
         <div
@@ -347,94 +346,181 @@
         </div>
       </div>
     </section>
+
     <!-- ================= PORTFOLIO ================= -->
     <section id="portfolio" class="container mx-auto px-4 md:px-8 py-20">
-      <!-- Title -->
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-bold">Portfolio</h2>
-        <p class="text-gray-500 mt-3">
-          Some of my recent projects using modern technologies
-        </p>
-      </div>
-
       <!-- FILTER BUTTONS -->
       <div class="flex flex-wrap justify-center gap-3 mb-12">
         <button
-          class="bg-orange-500 text-white px-5 py-2 rounded-lg font-medium"
+          data-filter="all"
+          class="filter-btn bg-orange-500 text-white px-5 py-2 rounded-lg cursor-pointer"
         >
           All
         </button>
         <button
-          class="bg-white/10 hover:bg-white/20 transition px-5 py-2 rounded-lg"
+          data-filter="react"
+          class="filter-btn bg-white/10 px-5 py-2 rounded-lg cursor-pointer"
+        >
+          React
+        </button>
+        <button
+          data-filter="javascript"
+          class="filter-btn bg-white/10 px-5 py-2 rounded-lg cursor-pointer"
         >
           JavaScript
         </button>
-        <button
-          class="bg-white/10 hover:bg-white/20 transition px-5 py-2 rounded-lg"
+        <!-- <button
+          data-filter="nextjs"
+          class="filter-btn bg-white/10 px-5 py-2 rounded-lg cursor-pointer"
         >
-          React.js
-        </button>
-        <button
-          class="bg-white/10 hover:bg-white/20 transition px-5 py-2 rounded-lg"
-        >
-          Next.js
-        </button>
-        <button
-          class="bg-white/10 hover:bg-white/20 transition px-5 py-2 rounded-lg"
-        >
-          Node.js
-        </button>
+          Nextjs
+        </button> -->
       </div>
 
       <!-- PROJECT GRID -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- CARD -->
-        <div class="group">
-          <div class="overflow-hidden rounded-xl">
-            <img
-              src="https://picsum.photos/450/300"
-              alt="Project"
-              class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
-            />
+        <!-- ===== React PROJECTS ===== -->
+        <a
+          href="https://wearecommunity.io/"
+          class="project-card duration-300 hover:scale-105 hover:text-orange-500"
+          data-category="react"
+        >
+          <img
+            src="./images/wearecommunity.png"
+            class="rounded-xl mb-3 h-64 w-full"
+          />
+          <div class="flex justify-between">
+            <h3 class="font-semibold">React Project</h3>
+            <h3 class="font-semibold">wearecommunity.io</h3>
           </div>
+        </a>
+        <a
+          href="https://kiut.uz/uz/"
+          class="project-card duration-300 hover:scale-105 hover:text-orange-500"
+          data-category="react"
+        >
+          <img src="./images/kuit.png" class="rounded-xl mb-3 h-64 w-full" />
+          <div class="flex justify-between">
+            <h3 class="font-semibold">React Project</h3>
+            <h3 class="font-semibold">kiut.uz</h3>
+          </div>
+        </a>
+        <a
+          href="https://dokon-soft-beta.vercel.app"
+          class="project-card duration-300 hover:scale-105 hover:text-orange-500"
+          data-category="react"
+        >
+          <img
+            src="./images/dokon.png"
+            class="rounded-xl mb-3 h-64 w-full"
+            alt="dokon"
+          />
+          <div class="flex justify-between">
+            <h3 class="font-semibold">React Project</h3>
+            <h3 class="font-semibold">dokon-soft.uz</h3>
+          </div>
+        </a>
+        <a
+          href="https://magister-beryl.vercel.app/"
+          class="project-card duration-300 hover:scale-105 hover:text-orange-500"
+          data-category="react"
+        >
+          <img
+            src="./images/magister.png"
+            class="rounded-xl mb-3 h-64 w-full"
+          />
+          <div class="flex justify-between">
+            <h3 class="font-semibold">React Project</h3>
+            <h3 class="font-semibold">magister</h3>
+          </div>
+        </a>
+        <a
+          href="https://ijara-steel.vercel.app/"
+          class="project-card duration-300 hover:scale-105 hover:text-orange-500"
+          data-category="react"
+        >
+          <img src="./images/ijara.png" class="rounded-xl mb-3 h-64 w-full" />
+          <div class="flex justify-between">
+            <h3 class="font-semibold">React Project</h3>
+            <h3 class="font-semibold">ijara.uz</h3>
+          </div>
+        </a>
+        <a
+          href="https://realtor-react-bay.vercel.app/"
+          class="project-card duration-300 hover:scale-105 hover:text-orange-500"
+          data-category="react"
+        >
+          <img src="./images/realtor.png" class="rounded-xl mb-3 h-64 w-full" />
+          <div class="flex justify-between">
+            <h3 class="font-semibold">React Project</h3>
+            <h3 class="font-semibold">realtor-clone</h3>
+          </div>
+        </a>
 
-          <div class="flex justify-between items-center mt-4 px-1">
-            <h3 class="font-semibold text-lg text-gray-200">Project Name</h3>
-            <span class="text-sm text-gray-400"> React.js </span>
+        <!-- ===== JavaScript PROJECTS ===== -->
+        <a
+          href="https://mathstutor19-bookshop.netlify.app/"
+          class="project-card duration-300 hover:scale-105 hover:text-orange-500"
+          data-category="javascript"
+        >
+          <img
+            src="./images/bookshop.png"
+            class="rounded-xl mb-3 h-64 w-full"
+          />
+          <div class="flex justify-between">
+            <h3 class="font-semibold">JavaScript Project</h3>
+            <h3 class="font-semibold">bookshop</h3>
           </div>
+        </a>
+        <a
+          href="https://typingtest-eta.vercel.app/"
+          class="project-card duration-300 hover:scale-105 hover:text-orange-500"
+          data-category="javascript"
+        >
+          <img src="./images/typing.png" class="rounded-xl h-64 mb-3 w-full" />
+          <div class="flex justify-between">
+            <h3 class="font-semibold">JavaScript Project</h3>
+            <h3 class="font-semibold">typing-test</h3>
+          </div>
+        </a>
+        <a
+          href="https://snakegame-gamma.vercel.app/"
+          class="project-card duration-300 hover:scale-105 hover:text-orange-500"
+          data-category="javascript"
+        >
+          <img src="./images/snake.png" class="rounded-xl mb-3 h-64 w-full" />
+          <div class="flex justify-between">
+            <h3 class="font-semibold">JavaScript Project</h3>
+            <h3 class="font-semibold">snakegame</h3>
+          </div>
+        </a>
+        <a
+          href="https://moviesproject-javascript.vercel.app/"
+          class="project-card duration-300 hover:scale-105 hover:text-orange-500"
+          data-category="javascript"
+        >
+          <img src="/images/movie.png" class="rounded-xl mb-3 h-60 w-full" />
+          <div class="flex justify-between">
+            <h3 class="font-semibold">JavaScript Project</h3>
+            <h3 class="font-semibold">movie-project</h3>
+          </div>
+        </a>
+
+        <!-- ===== NEXTJS PROJECTS ===== -->
+        <!-- <div class="project-card" data-category="nextjs">
+          <img src="https://picsum.photos/450/300?4" class="rounded-xl mb-3" />
+          <h3 class="font-semibold">Nextjs Project 1</h3>
         </div>
 
-        <!-- CARD -->
-        <div class="group">
-          <div class="overflow-hidden rounded-xl">
-            <img
-              src="https://picsum.photos/450/300"
-              alt="Project"
-              class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
-            />
-          </div>
-
-          <div class="flex justify-between items-center mt-4 px-1">
-            <h3 class="font-semibold text-lg text-gray-200">Project Name</h3>
-            <span class="text-sm text-gray-400"> JavaScript </span>
-          </div>
+        <div class="project-card" data-category="nextjs">
+          <img src="https://picsum.photos/450/300?5" class="rounded-xl mb-3" />
+          <h3 class="font-semibold">Nextjs Project 2</h3>
         </div>
 
-        <!-- CARD -->
-        <div class="group">
-          <div class="overflow-hidden rounded-xl">
-            <img
-              src="https://picsum.photos/450/300"
-              alt="Project"
-              class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
-            />
-          </div>
-
-          <div class="flex justify-between items-center mt-4 px-1">
-            <h3 class="font-semibold text-lg text-gray-200">Project Name</h3>
-            <span class="text-sm text-gray-400"> Next.js </span>
-          </div>
-        </div>
+        <div class="project-card" data-category="nextjs">
+          <img src="https://picsum.photos/450/300?6" class="rounded-xl mb-3" />
+          <h3 class="font-semibold">Nextjs Project 3</h3>
+        </div> -->
       </div>
     </section>
 
@@ -442,17 +528,19 @@
     <section class="py-20 max-w-4xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-10">Contact me</h2>
 
-      <form class="" id="form">
+      <form id="contactForm">
         <div class="grid md:grid-cols-2 gap-4">
           <input
             name="name"
             class="bg-[#141414] p-3 rounded"
             placeholder="Name"
+            required
           />
           <input
             name="email"
             class="bg-[#141414] p-3 rounded"
             placeholder="Email"
+            required
           />
           <input
             name="phone"
@@ -465,12 +553,16 @@
             placeholder="Service"
           />
         </div>
+
         <textarea
           name="message"
           class="bg-[#141414] p-3 w-full my-4 rounded"
           placeholder="Project details"
         ></textarea>
-        <button class="py-2 rounded w-full bg-orange-500">Send</button>
+
+        <button type="submit" class="py-2 rounded w-full bg-orange-500">
+          Send
+        </button>
       </form>
     </section>
 
@@ -480,15 +572,7 @@
         © 2024 UI/UX Designer. All Rights Reserved.
       </p>
     </footer>
-    <script>
-      // Mobile menu toggle
-      const menuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
 
-      menuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
-    <script src="./js/form.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
